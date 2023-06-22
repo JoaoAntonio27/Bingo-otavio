@@ -1,0 +1,155 @@
+
+
+
+body {
+    margin: 0;
+    margin-bottom: 50px;
+    background-color: #899E8B; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Jost", sans-serif;
+}
+
+header {
+    background-color: #706C61;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+
+.container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+#gerar {
+    width: 90px;
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 10px;
+    background-color: #299c34; 
+    color: #FFFFFF; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+}
+
+#resetar {
+    width: 90px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: #9c2929; 
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    border-radius: 15px;
+}
+
+#iniciar {
+    width: 90px;
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 10px;
+    background-color: #299c34; 
+    color: #FFFFFF; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+}
+
+#numeros-sorteados {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    word-break: normal;
+}
+
+.container-numeros {
+    width: 30%;
+}
+
+#area-cartela {
+    max-width: 1000px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Adiciona essa linha para ajustar a direção das cartelas */
+    align-items: center;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cartela {
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+}
+
+.cartela td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 24px;
+}
+
+.cartela td:not(:nth-child(6n)) {
+    border-right: none;
+}
+
+.cartela tr:not(:last-child) td {
+    border-bottom: none;
+}
+
+.cartela th {
+    padding: 10px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: gray;
+}
+
+.sorteado {
+    background-color: green;
+}
+
+.numero-sorteado {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    ;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: #706C61;
+} 
+
+.jogador {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 15px;
+}
